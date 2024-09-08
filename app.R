@@ -41,6 +41,7 @@ add_yaml <- function(file, title, author, date, format) {
       "format:\n",
       "  docx:\n",
       "    number-sections: true\n",
+<<<<<<< HEAD
       "---\n\n"
     )
   } else if (tolower(format) == "markdown") {
@@ -50,6 +51,8 @@ add_yaml <- function(file, title, author, date, format) {
       "author: \"", author, "\"\n",
       "date: \"", date, "\"\n",
       "slug: \"", "\"\n",
+=======
+>>>>>>> a9450f366902bd7042aa20f85de7ca3691ff1f67
       "---\n\n"
     )
   } else {
