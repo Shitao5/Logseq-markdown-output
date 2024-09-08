@@ -38,7 +38,9 @@ add_yaml <- function(file, title, author, date, format) {
   } else if (tolower(format) == "docx") {
     yaml_content <- paste0(
       basic_yaml,
-      "format: docx\n",
+      "format:\n",
+      "  docx:\n",
+      "    number-sections: true\n",
       "---\n\n"
     )
   } else {
